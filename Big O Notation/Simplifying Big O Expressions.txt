@@ -1,0 +1,19 @@
+Big O Shorthands 
+
+- Arithmetic operations are constant 
+- Variable assignment is constant
+- Accessing elements is an array (by index) or object (by key) is constant
+- In a loop, the complexity is length of whatever happens inside of the loop
+
+** The timeor space complexity depends on the algorithm, not the hardware used to run the algorithm.(as measured by Big O)
+
+** Time complexity **
+
+O(1) -> O(log(n)) -> O(n) -> O(n(log(n))) -> O(n2)
+Best --------------------------------------- Worst
+
+** Space complexity **
+
+- Most Primitives(boolean , numbers , undefined, null) are constant space.
+- Strings require O(n) space (where n is the string length)
+- Reference type are generally O(n), where n is the length (for arrays) or the number of keys (for objects)

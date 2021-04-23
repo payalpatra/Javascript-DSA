@@ -1,0 +1,56 @@
+1) Big O Notation is a way to describe the speed or complexity of a given algorithm.
+2) Big-O notation can express the best, worst, and average-case running time of an algorithm.
+3) The Big-O Asymptotic Notation gives us the Upper Bound Idea, mathematically described below: 
+    f(n) = O(g(n)) -- if there exists a positive integer n0 and a positive constant c, such that f(n)≤c.g(n) ∀ n≥n0 
+4) Here are the Big O Notation for some algorithms.
+   a) O(log n) -- Binary Search
+   b) O(n) -- Simple search
+   c) O(n * log n) -- Quicksort
+   d) O(n2) -- Selection sort
+   e) O(n!) -- Traveling salesperson
+5) What does a Better Code actually Mean ??
+  a) Faster 
+  b) Less-Memor
+  c) More Readble 
+
+What Exactly is Big O Notation ??
+- It describes the relationship of how the runtime of an algorithm grows as the inputs grow.
+- We say that an algorithm is O(f(n)) if the number of simple operations the computer has to do is evetually less than a constant times f(n), as n increases.
+
+-- f(n) could be linear (f(n) = n)
+-- f(n) could be quadratic (f(n) =n2)
+-- f(n) could be constant (f(n) =1)
+
+** When we are talking about Big O Notation. It basically means the worst case scenario.(Upper Bound for runtime) ********************************
+
+
+*************** Example 1 ***************
+
+Big O Notation of this example -- O (n)  
+
+function countUpDown (n){
+
+    console.log("Going Up");
+    for (let i = 0; i< n ; i++){
+        console.log(i);
+    }
+
+    console.log("At the top");
+    for (let j = n-1; j >= 0 ; j--){
+        console.log(j);
+    }
+    console.log("Back Down, Bye");
+}
+
+*************** Example 2 ***************
+
+Big O Notation of this example -- O (n * n)  = O (n2)
+
+function printAllPairs(n){
+    for(let i = 0; i< n ; i++){
+        for(let j=0; j< n ; j++){
+            console.log(i,j);
+        }
+    }
+}
+console.log(printAllPairs(10));
