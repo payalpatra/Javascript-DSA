@@ -1,0 +1,58 @@
+* Understand how objects and arrays work, through the lens of Big O .
+* Explain why adding elements to beginning of an array is costly.
+* Compare and Contrast the runtime for arrays and objects as well as built-in methods.
+
+Objects - Unordered , Key Value Pairs
+
+Q) when to use objects?
+- When you don't need ordering
+- When you need fast access/insertion and removal
+
+Big O of Objects -
+ - Insertion - O(1)
+ - Removal - O(1)
+ - Searching - O(N)
+ - Accessing - O(1)
+
+# Example
+
+let instructor ={
+    firstName : "Payal"
+    isInstructor : true,
+    favoriteNumbers: [1,2,3,4]
+}
+
+Big O of Object Methods
+ - object.keys - O(N)
+ - object.values - O(N)
+ - object.entries - O(N)
+ - hasOwnProperty - O(N)
+
+Arrays - Ordered Lists 
+
+let names = ["Michael", "Melissa" , "Andrew]
+let values = [true, {} , [] , 2 , "awesome"]
+
+When to use arrays
+- when you need order 
+- When you need fast access/insertion and removal 
+
+Big O of Arrays 
+- Insertion - It depends (Depends on where we  are inserting - Inserting at the Beginning of array)
+- Removal - It depends (Depends on where we  are removing- Inserting at the Beginning of array)
+- Searching - O(N)
+- Accessing - O(1) 
+
+let names = ["Michael", "Melissa", "Andrew"]
+
+Big O of Arrays operations
+- Push - O(1)
+- Pop - O(1)
+- shift - O(N)
+- unshift - O(N)
+- constant - O(N)
+- slice - O(N)
+- splice - O(N)
+- sort - O(N * logN)
+- forEach/map/filter/reduce/etc - O(N)
+
