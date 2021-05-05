@@ -4,14 +4,20 @@ What is an algorithm ?
 
 Problem solving approach :-
 
-- Understand the problem
+1) Understand the problem
 ---- Can I restate the problem in your own words?
 ---- What are the inputs that go into the problem ?
 ---- What are the outputs that should come from the solution to the problem ?
 ---- Can the outputs be determined from the inputs? In other words, do i have enough information to solve the problem? 
 ---- How should i label the important pieces of the data that are a part of the problem ?
 
-- Explore Concrete Examples
-- Break it Down
-- Solve/Simplify
-- Look Back And Refactor
+2) Explore Concrete Examples
+---- Start with simple example
+---- Progress to more complex example
+---- Explore Example with empty inputs
+---- Explore Example with invalid inputs
+
+3) Break it Down
+
+4) Solve/Simplify
+5) Look Back And Refactor
