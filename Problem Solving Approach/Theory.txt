@@ -18,6 +18,20 @@ Problem solving approach :-
 ---- Explore Example with invalid inputs
 
 3) Break it Down
-
 4) Solve/Simplify
 5) Look Back And Refactor
+
+
+------------ PART 2 ------------
+/--- PROBLEM SOLVING PATTERNS ---\
+
+* Frequency Counter 
+* Multiple Pointers 
+* Sliding Window
+* Divide and Conquer
+* Dynamic Programming
+* Greedy Algorithms
+* Backtracking
+* Many More !!!!
+
+1) Frequency Counter -- This pattern uses objects or sets of collect values/frequencies of values.It avoids nested loops (O(N2))
