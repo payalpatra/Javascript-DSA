@@ -38,7 +38,7 @@ function charCount2(str) {
 
     for (let i = 0; i < str.length; i++) {
         let char = str[i].toLowerCase();
-        
+
         // if (/[a-z0-9]/.test(char)) {
         //   if (output[char]) {
         //     output[char]++;
@@ -67,5 +67,5 @@ console.log(
 // ---- Notes ---- \\
 
 // char.charCodeAt() > 47 && char.charCodeAt() < 58 ---> // Numeric (0 - 9)
-// char.charCodeAt() > 64 && char.charCodeAt() < 91 ---> // Numeric (A - Z)
-// char.charCodeAt() > 96 && char.charCodeAt() < 123 ---> // Numeric (a - z)
+// char.charCodeAt() > 64 && char.charCodeAt() < 91 ---> // Capital Alphabets (A - Z)
+// char.charCodeAt() > 96 && char.charCodeAt() < 123 ---> // Small Alphabets (a - z)
