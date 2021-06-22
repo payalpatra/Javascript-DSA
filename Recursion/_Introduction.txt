@@ -1,0 +1,51 @@
+** What is Recursion ??
+- A process(let's say function) that calls itself.
+
+** Why do we need Recursive function ?
+- Example - 1) JSON.parse / JSON.stringify
+            2) document.getElementById and DOM traversal Algorithms
+            3) Object Traversal
+
+** Call Stack ????       
+    - It's a stack data structure.
+    - Any time a function is invoked it is pushed on the top of the call stack.
+    - When the function ends the compiler will pop the function from the stack.
+
+** What's the point of call stack in recursion ???
+ -- Well, In recursion, the call stack behaves differently that normal function invokes .
+ -- We are used to functions being pushed on th call stack and popped off when ther are done.
+ -- But in recursive functions -- We keep pushing same functions onto the call stack !
+
+
+** How recursive functions work ??
+-- Invoke the same function with a different input until a base case is reached.
+
+** Base Case ???
+-- The condition when the recursion ends.
+
+** Two Essential parts of a recursive function  ????
+-- Base Case 
+-- Different Input/ Different Data
+
+** Problems while writing recursive solutions ????
+-- No base case
+-- Forgeting to return or returning the wrong thing
+-- Stack Overflow
+
+** Helper Method Recursion ?
+- Check 4_helperMethodRecursion file
+
+** Pure Recursion Tips ?
+-- For arrays, use methods like slice , the spread Operator and concat that makes copies of arrrays so you do not mutate/change them.
+-- The Strings are immutable, so we can use methods like slice,substr or substring to make copies of strings.
+-- To make Objects use object.assign , or the spread operator
+
+
+** Note :-
+-- Mutable is a type of variable that can be changed. 
+-- In JavaScript, only objects and arrays are mutable, not primitive values. 
+-- Immutables are the objects whose state cannot be changed once the object is created. Strings and Numbers are Immutable.
+
+----- In JavaScript, a primitive (primitive value, primitive data type) is data that is not an object and has no methods. 
+----- There are 7 primitive data types: string, number, bigint, boolean, undefined, symbol, and null. 
+----- All primitives are immutable, i.e., they cannot be altered
