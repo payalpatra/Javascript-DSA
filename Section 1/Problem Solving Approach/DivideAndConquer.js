@@ -38,6 +38,8 @@ function divideAndConquer(arr, num) {
         // Divide the array until we satisfy one of the condition
         let mid = Math.floor((min + max) / 2)
 
+        // Searching will be done from the Right part of the middle.
+        // i.e Minimum to last
         if (arr[mid] < num) {
             min = mid + 1;
         } else if (arr[mid] > num) {

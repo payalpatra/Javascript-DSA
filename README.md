@@ -1,8 +1,8 @@
 # Javascript-DSA
-## Let's Master Data Structures using Javascript 👨‍💻💻
+## Let's Master Data Structures & Algorithms using Javascript 👨‍💻
 
 # Overview
-## This repository will have 3 sections covering concepts of Data Structures And Algorithms. 
+## This repository will have 3 sections covering concepts of Data Structures And Algorithms. 🥇
 
 # Contents
 ## Section 1
