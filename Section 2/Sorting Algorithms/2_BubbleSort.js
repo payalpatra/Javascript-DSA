@@ -60,14 +60,12 @@ function bubbleSort2(arr) {
             if (arr[j] > arr[j + 1]) {
                 // Swap them
                 [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-                noSwaps = false;
-                console.log("No Swap Inside",noSwaps)
+                noSwaps = false;             
             }
         }
 
         // If there is noSwap or noSwap = true then it breaks
         if (noSwaps === true) {
-            console.log("No Swap Outside",noSwaps)
             break;
         }
     }
