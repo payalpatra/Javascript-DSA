@@ -36,6 +36,7 @@ class singlyLinkedList {
 
         // If the list is empty
         if (!this.head) {
+            // Head and Tail points to new node
             this.head = newNode;
             this.tail = this.head
         } else {
@@ -77,5 +78,15 @@ list.push(30)
     length: 2
 }
 **/
-
+list.push(40)
 console.log(list)
+
+// Output -- Pushes 40 into the Linked List and Increaments
+
+/*
+{
+    head: Node { val: 20, next: Node { val: 30, next: [Node] } },
+    tail: Node { val: 40, next: null },
+    length: 3
+}
+*/
