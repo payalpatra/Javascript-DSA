@@ -91,13 +91,16 @@ class SinglyLinkedList {
     // UNSHIFT
     unshiftNode(val) {
         let newNode = new Node(val)
+        // Store the current head
         let current = this.head
 
         if (!this.head) {
             this.head = newNode
             this.tail = this.head
         } else {
+            // Update the current head to point to the new node
             this.head = newNode
+            // Update new Node's next to point to the previous head
             newNode.next = current
         }
         this.length++
