@@ -152,8 +152,8 @@ class SinglyLinkedList {
             }
             prev.next = newNode;
             newNode.next = current;
+            this.length++
         }
-
         return "Insertion COMPLETED 🥇";
     }
 
