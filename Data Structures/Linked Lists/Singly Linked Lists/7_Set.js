@@ -104,7 +104,7 @@ class SinglyLinkedList {
 
     // GET
     get(index) {
-        if (index < 0 || index > this.length) {
+        if (index < 0 || index >= this.length) {
             console.log("Undefined")
             return null;
         }

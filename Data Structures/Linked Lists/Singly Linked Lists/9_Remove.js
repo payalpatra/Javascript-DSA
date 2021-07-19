@@ -81,11 +81,7 @@ class singlyLinkedList {
 
         let current = this.head;
         this.head = current.next;
-        if (this.length === 0) {
-            this.length = 0
-        }
         this.length --
-
     }
 
     // UNSHIFT - Add node to the beginning
@@ -106,7 +102,7 @@ class singlyLinkedList {
 
     // GET - Retrieving a node by its postion
     get(index) {
-        if (index < 0 || index > this.length) {
+        if (index < 0 || index >= this.length) {
             console.log("Undefined")
             return
         }
@@ -130,7 +126,7 @@ class singlyLinkedList {
     }
     // INSERT - Adding a new node to a specific position
     insert(newVal, index) {
-        if (index < 0 || index >= this.length) {
+        if (index < 0 || index > this.length) {
             return false
         } else if (index === this.length) {
             this.push(newVal)
@@ -179,7 +175,7 @@ class singlyLinkedList {
     }
 }
 
-let list = new singlyLinkedList
+let list = new singlyLinkedList()
 list.push(10)
 list.push(20)
 list.push(30)
@@ -194,7 +190,7 @@ list.push(40)
 // list.insert(25, 2)
 
 // list.traverse()
-list.remove(0)
+list.remove(1)
 // list.traverse()
 console.log(list)
 

@@ -102,7 +102,7 @@ class SinglyLinkedList {
     }
 
     getNode(index) {
-        if (index < 0 || index > this.length) {
+        if (index < 0 || index >= this.length) {
             console.log("Undefined")
             return
         }
