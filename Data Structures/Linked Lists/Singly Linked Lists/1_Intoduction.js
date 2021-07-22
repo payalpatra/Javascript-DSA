@@ -66,6 +66,6 @@ first.next.next = new Node(40)
 // BIG O Notation
 
 // Insertion - O(1)
-// Removal - O(1)
+// Removal - O(1) or O(N)
 // Searching - O(N)
 // Access - O(N)

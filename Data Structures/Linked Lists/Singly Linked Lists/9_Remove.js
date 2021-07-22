@@ -8,8 +8,8 @@
 // -- Otherwise, using the get method, access the node at the index - 1.
 // -- Set the next property on that node to be the new Node to be the previous next.
 // -- Set the next Property on that node to be the next of the next node
-// Decrease  the length
-// Return true
+// -- Decrease  the length
+// -- Return true
 
 // Node
 class Node {

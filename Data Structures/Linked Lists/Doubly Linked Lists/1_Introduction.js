@@ -22,3 +22,10 @@ class doublyLinkedList{
 }
 let list = new doublyLinkedList()
 console.log(list)
+
+// BIG O Notation
+
+// Insertion - O(1)
+// Removal - O(1)
+// Searching - O(N)
+// Access - O(N)
