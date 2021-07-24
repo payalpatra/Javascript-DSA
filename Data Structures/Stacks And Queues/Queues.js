@@ -35,12 +35,12 @@ class Queue {
         let newNode = new Node(val);
         if (!this.first) {
             this.first = newNode;
-            this.last = newNode
+            this.last = newNode;
         } else {
             this.last.next = newNode;
             this.last = newNode;
         }
-        return ++this.size
+        return ++this.size;
     }
 
     // dequeue - Remove from the beginning 

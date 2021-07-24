@@ -19,6 +19,7 @@
 - Introduction
 - Linked Lists
 - Stacks & Queues
+- Trees
 
 ## Dynamic Programming
 
