@@ -6,7 +6,7 @@
 
 // -- Create a queue and a variable to store the values of nodes visited.
 // -- Place the root node in the queue.
-// -- Loop as long as there is anything in the queue 
+// -- Loop as long as there is anything in the queue
 //        -- dequeue a node from the queue and push the value of the node into the
 //             variable that stores the nodes.
 //        -- If there is a left property on the nodes dequeued - add it to the queue.
@@ -50,77 +50,77 @@ BFS - [10,6,15,3,8,20]
 
 // Node
 class Node {
-    constructor(val) {
-        this.val = val;
-        this.left = null;
-        this.right = null
-    }
+  constructor(val) {
+    this.val = val;
+    this.left = null;
+    this.right = null;
+  }
 }
 
 // Tree
 class Tree {
-    constructor() {
-        this.root = null;
-    }
+  constructor() {
+    this.root = null;
+  }
 
-    // INSERT
-    insert(val) {
-        let newNode = new Node(val);
-        if (!this.root) {
-            this.root = newNode;
-        } else {
-            let current = this.root;
-            while (true) {
-                if (val === current) return undefined;
-                if (val < current.val) {
-                    if (current.left === null) {
-                        current.left = newNode;
-                        return this;
-                    }
-                    current = current.left;
-                } else if (val > current.val) {
-                    if (current.right === null) {
-                        current.right = newNode;
-                        return this;
-                    }
-                    current = current.right;
-                }
-            }
+  // INSERT
+  insert(val) {
+    let newNode = new Node(val);
+    if (!this.root) {
+      this.root = newNode;
+    } else {
+      let current = this.root;
+      while (true) {
+        if (val === current) return undefined;
+        if (val < current.val) {
+          if (current.left === null) {
+            current.left = newNode;
+            return this;
+          }
+          current = current.left;
+        } else if (val > current.val) {
+          if (current.right === null) {
+            current.right = newNode;
+            return this;
+          }
+          current = current.right;
         }
+      }
     }
-    // FIND
-    find(val) {
-        if (!this.root) return false;
-        let current = this.root
-        let found = false;
-        while (current && found === false) {
-            if (val < current.val) {
-                current = current.left;
-            } else if (val > current.val) {
-                current = current.right;
-            } else {
-                found = true;
-            }
-        }
-        return found;
+  }
+  // FIND
+  find(val) {
+    if (!this.root) return false;
+    let current = this.root;
+    let found = false;
+    while (current && found === false) {
+      if (val < current.val) {
+        current = current.left;
+      } else if (val > current.val) {
+        current = current.right;
+      } else {
+        found = true;
+      }
     }
+    return found;
+  }
 
-    // BREADTH FIRST SEARCH - Traverse siblings before child
-    BFS() {
-        let current = this.root;
-        let queue = [];
-        let visited = [];
-        queue.push(current);
+  // BREADTH FIRST SEARCH - Traverse siblings before child
+  BFS() {
+    let current = this.root;
+    let queue = [];
+    let visited = [];
+    queue.push(current);
 
-        while (queue.length !== 0) {
-            // Remove from the beginning
-            current = queue.shift();
-            visited.push(current.val);
-            if (current.left) queue.push(current.left);
-            if (current.right) queue.push(current.right);
-        }
-        return visited;
+    while (queue.length !== 0) {
+      // Remove from the beginning
+      current = queue.shift(); // removed node
+      visited.push(current.val);
+      if (current.left) queue.push(current.left);
+      if (current.right) queue.push(current.right);
     }
+    return visited;
+  }
 
 }
 
@@ -136,3 +136,8 @@ tree.insert(20);
 // tree.find(15)
 
 console.log(tree.BFS());
+/*
+OUTPUT - [ 10, 6, 15, 3, 8, 20 ]
+*/
+
+
