@@ -20,6 +20,7 @@
 - Linked Lists
 - Stacks & Queues
 - Trees
+- Heaps
 
 ## Dynamic Programming
 
