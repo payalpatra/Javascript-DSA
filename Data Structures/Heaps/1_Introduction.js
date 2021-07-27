@@ -60,3 +60,12 @@
 //        Its parent is at index (N-1)/2 --(Floored)
 
 
+
+// --- BIG O OF BINARY HEAPS (Both MIN AND MAX) --- \\
+
+// INSERTION - O(log N)
+// REMOVAL - O(log N)
+// SEARCHING - O(N)
+// ACCESS - O(N)
+
+
