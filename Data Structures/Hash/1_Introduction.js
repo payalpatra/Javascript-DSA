@@ -1,5 +1,6 @@
 // ----- HASH ----- \\
 
+// Hash tables are collections of key-value pairs.
 // -- Hash Tables are used to store key-value pairs.
 // -- They are like arrays, but the keys are not ordered.
 // -- Unlike arrays, hash tables are fast for all of the following operations :
@@ -34,7 +35,7 @@ function hash(key, arrayLength) {
     return total
 }
 
-console.log("HASH FUNCTION",hash("orange", 10));
+console.log("HASH FUNCTION", hash("orange", 10));
 
 // PROBLEMS Associated with the above hash function
 
@@ -55,7 +56,7 @@ function revisedHash(key, arrlength) {
     return total;
 }
 
-console.log("REVISEDHASH FUNCTION",revisedHash("orange", 13))
+console.log("REVISEDHASH FUNCTION", revisedHash("orange", 13))
 
 /// Why to use PRIME NUMBER ?
 
@@ -78,7 +79,7 @@ function Revised(key, length) {
     return total;
 }
 
-console.log("REVISED FUNCTION ",Revised("orange", 13))
+console.log("REVISED FUNCTION ", Revised("orange", 13))
 
 // HANDLING COLLISIONS 
 
@@ -130,4 +131,10 @@ class HashTable {
 }
 
 let hashString = new HashTable();
-console.log("HASH CLASS",hashString._hash("orange"))
+console.log("HASH CLASS", hashString._hash("orange"))
+
+// --- BIG O OF HASH TABLES --- \\
+
+// INSERTION - O(1)
+// REMOVAL - O(1)
+// ACCESS - O(1)
