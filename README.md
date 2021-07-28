@@ -21,6 +21,7 @@
 - Stacks & Queues
 - Trees
 - Heaps
+- Hash
 
 ## Dynamic Programming
 
