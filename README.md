@@ -22,6 +22,8 @@
 - Trees
 - Heaps
 - Hash
+- Graphs
+
 
 ## Dynamic Programming
 

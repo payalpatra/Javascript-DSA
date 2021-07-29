@@ -18,6 +18,98 @@
 // -- They are not a built in data Structure in javascript, but are relatively simple to implement.
 
 
+//// ----- INFIX TO POSTFIX ----- \\\
+
+// Q) X - Y / Z - K * D
+/*
+
+------SCAN FROM LEFT TO RIGHT-------
+
+STEP - 1   [  ]
+           first
+           last
+
+If its a operand add it to the postFixExpression variable           
+PostFixExpression - X
+
+STEP - 2   [ - ]
+           first
+           last
+
+If its a operator push it to stack          
+PostFixExpression - X
+
+STEP - 3   [ / ]-------[ - ]
+           first        last
+
+Check if the precedence of the operator is greater than the operator
+that is present on the stack. (if yes -> Push operator)      
+PostFixExpression - XY
+
+STEP - 4   [ / ]-------[ - ]
+           first        last
+
+      
+PostFixExpression - XYZ
+
+STEP - 5   [ - ]
+           first
+           last
+          
+Check if the precedence of the operator is greater than the operator
+that is present on the stack. (if NO -> pop operator)                 
+PostFixExpression - XYZ/
+
+STEP - 6   [  ]
+           first
+           last
+          
+Check  precedence of the operator with the operator that is present 
+on the stack. (Same Precedance -> pop operator)                 
+PostFixExpression - XYZ/-
+
+STEP - 7   [ - ]
+           first
+           last
+          
+PUSH THE OTHER MINUS OPERATOR INTO THE STACK          
+PostFixExpression - XYZ/-
+
+
+STEP - 8   [ - ]
+           first
+           last
+          
+If its a operator push it to stack             
+PostFixExpression - XYZ/-K
+
+STEP - 9   [ * ]-------[ - ]
+           first        last
+
+Check if the precedence of the operator is greater than the operator
+that is present on the stack. (if yes -> Push operator)      
+PostFixExpression - XYZ/-K
+
+
+STEP - 10   [ * ]-------[ - ]
+           first         last
+    
+PostFixExpression - XYZ/-KD
+
+STEP - 11  [ - ]
+           first         
+           last
+
+PPostFixExpression - XYZ/-KD*
+
+STEP - 11  [  ]
+           first         
+           last
+           
+PostFixExpression - XYZ/-KD*-
+
+*/
+
 // ---------------------- Creating a stack using Linked Lists -------------------- \\
 
 class Node {
@@ -82,3 +174,5 @@ console.log(stack)
 // REMOVAL - O(1)
 // SEARCHING - O(N)
 // ACCESS - O(N)
+
+
