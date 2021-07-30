@@ -84,8 +84,5 @@ graph.addEdge("Cuttack", "Khordha")
 graph.addEdge("Cuttack", "Bhubaneswar")
 
 // graph.removeEdge("Cuttack", "Bhubaneswar")
-
-console.log(graph)
 graph.removeVertex('Cuttack')
 
-console.log(graph)

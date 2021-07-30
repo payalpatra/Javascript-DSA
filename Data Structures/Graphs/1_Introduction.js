@@ -129,8 +129,22 @@ Storage            O(|v|+|E|)              O(|V^2|)
 
 /// UNDIRECTED GRAPH
 class Graph {
-    constructor() {
-        this.adjacencyList = {}
-    }
+  constructor() {
+    this.adjacencyList = {}
+  }
 }
 
+// -- GRAPH TRAVERSAL -- \\
+
+// Visiting/Updating/Check each vertex in graph 
+
+
+//--- GRAPH TRAVERSAL USES ---\\
+
+// -- Peer to peer networking
+// -- Web crawlers
+// -- Finding "Closest" matches/recommendations
+// -- Shortest Path Problems 
+// ------- GPS Navigation
+// ------- Solving Mazes
+// ------- AI (Shortest Path to win the game)

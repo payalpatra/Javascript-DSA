@@ -131,7 +131,7 @@ class Tree {
             visited.push(node.val);
             if (node.left) traverse(node.left);
             if (node.right) traverse(node.right);
-        }
+        } 
         traverse(current);
 
         return visited;
