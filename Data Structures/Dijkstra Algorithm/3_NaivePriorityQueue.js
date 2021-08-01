@@ -1,12 +1,3 @@
-// --- DIJKSTRA APPROACH --- \\
-
-// -- Every time we look to visit a new node, we pick the node with the smallest known
-//    distance to visit first.
-// -- Once we've moved to the node we're going to visit, we look at each of its neighbours.
-// -- For each neighbouring node, we calculate the distance by summing the total edges that lead to
-//    node we're checking from the starting node.
-// -- If the new total distance to a new node is less than previous total, we store the new shorter distance for the node.
-
 
 class PriorityQueue {
     constructor() {
