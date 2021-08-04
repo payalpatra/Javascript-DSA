@@ -2,7 +2,7 @@
 
 // ** How is RADIX Sort?
 
-// --- Radiz Sort is a special sorting algortihm that works on lists of numbers.
+// --- Radix Sort is a special sorting algortihm that works on lists of numbers.
 // --- It never makes comparisions between elemenets .
 // --- It exploits the fact that information about the size of a number is encoded in the number of digits.
 // --- More digits means bigger number.
