@@ -34,7 +34,7 @@ Worst Case - O(N^2)
 
 ## Insertion Sort
 
-It is a searching method that builds of the sort by gradually creating a larger left half which is always sorted.The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+It is a sorting method that builds of the sort by gradually creating a larger left half which is always sorted.The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
 
 ### Applications
 

@@ -56,7 +56,7 @@ function selectionSort(arr) {
         if (i != min) {
             [arr[i], arr[min]] = [arr[min], arr[i]]
         }
-
+ 
     }
     return arr
 }
