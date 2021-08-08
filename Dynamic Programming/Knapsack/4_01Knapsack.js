@@ -25,7 +25,7 @@
 
 // Why initialization is important ?
 
-function KnapsackBottomUp(wt, v, W, n) {
+function Knapsack(wt, v, W, n) {
 
     let dp = new Array(n + 1);
 
@@ -49,7 +49,7 @@ function KnapsackBottomUp(wt, v, W, n) {
     return dp[n][W]
 }
 
-console.log(KnapsackBottomUp([10, 20, 30], [60, 100, 120], 50, 3))
+console.log(Knapsack([10, 20, 30], [60, 100, 120], 50, 3))
 
 // Time Complexity: O(n * W) 
 // Auxiliary Space :O(n * W) 
