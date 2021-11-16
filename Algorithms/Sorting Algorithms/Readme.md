@@ -7,7 +7,7 @@ Bubble Sort is a sorting algorithm that works by repeatedly swapping the adjacen
 ### Applications
 
 - Due to its simplicity, bubble sort is often used to introduce the concept of a sorting algorithm
-- Used to identify whether the list is already sorted. When the list is already sorted (which is the best-case scenario), the complexity of bubble sort is only
+- Used to identify whether the list is already sorted. When the list is already sorted (which is the best-case scenario), the complexity of bubble sort is O(N)
 - In real life, bubble sort can be visualised when people in a queue wanting to be standing in a height wise sorted manner swap their positions among themselves until everyone is standing based on increasing order of heights.
 
 ### Time Complexity
@@ -19,7 +19,7 @@ Worst Case -- O(N^2)
 
 ## Selection Sort
 
-It is a searching algorithm that sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
+It is a sorting algorithm that sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm maintains two subarrays in a given array.
 
 ### Applications
 
