@@ -11,7 +11,6 @@
 // -- Remove the first vertex from the queue and push it into the array that stores nodes visited
 // -- Loop over each vertex in the adjacency list for the vertex you are visiting.
 // -- If it is not inside the object that stores nodes visited, mark it as visited and enqueue that vertex.
-// -- 
 
 
 // GRAPH

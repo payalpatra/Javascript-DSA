@@ -6,7 +6,7 @@
 // --- We loop through the array and update the minimum. 
 // --- After the a single Pass we swap the initial with the minimum
 
-
+ 
 // Swap them
 //  [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
 
@@ -53,7 +53,7 @@ function selectionSort(arr) {
         }
         // After Each PASS 
         // Swap if i is not the lowest
-        if (i != min) {
+        if (i !== min) {
             [arr[i], arr[min]] = [arr[min], arr[i]]
         }
  

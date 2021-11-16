@@ -46,7 +46,7 @@ function charCount2(str) {
         //     output[char] = 1;
         //   }
 
-        // output[char] ? output[char]++ :output[char] =1;
+        // output[char] ? output[char]++ :output[char] = 1;
         // }
 
         if (

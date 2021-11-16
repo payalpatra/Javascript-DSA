@@ -32,10 +32,11 @@ console.log(same("Same Function Output", [1, 2, 1], [4, 4, 1])); // True
 // ------------ Time Complexity N2   ------------ \\
 
 function isSame1(arr1, arr2) {
-    if (arr1.length != arr2.length) {
+    if (arr1.length !== arr2.length) {
         return false;
     }
     for (let i = 0; i < arr1.length; i++) {
+        // We check if the square of the element in arr1 is present in arr2
         let correctIndex = arr2.indexOf(arr1[i] ** 2);
 
         // IndexOf returns -1 if desired output is not present
@@ -71,10 +72,12 @@ function frequencyCounter(arr1, arr2) {
 
     for (let key in frequencyCounter1) {
         
+        // Checks if square is present
         if (!(key ** 2 in frequencyCounter2)) {
             return false;
         }
         
+        // Checks if the frequencyis same
         if (frequencyCounter1[key] !== frequencyCounter2[key ** 2]) {
             return false;
         }

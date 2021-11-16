@@ -1,7 +1,7 @@
 // Frequency Counter Anagram
 
 //  What is Anagram ? 
-//  Ans - Two words are called anagrams if they have the same letters and same also same frequency of letters
+//  Ans - Two words are called anagrams if they have the same letters and also same frequency of letters
 
 function fcAnagram(str1, str2) {
     if (str1.length !== str2.length) {
