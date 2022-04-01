@@ -3,7 +3,7 @@ function KnapsackRec(wt, v, W, n, dp) {
     // Base Condition
     if (W === 0 || n === 0) return 0;
 
-    // Return dp if there is no value found 
+    // Return the value if it is already present
     if (dp[n][W] !== -1) {
         return dp[n][W];
     }
