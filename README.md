@@ -22,6 +22,7 @@
 - Trees
 - Heaps
 - Hash
+- Cache
 - Graphs
 
 
