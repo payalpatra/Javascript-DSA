@@ -1,4 +1,4 @@
-# Javascript-DSA
+# Javascript Data Structures And Algorithms 
 
 # Overview
 
